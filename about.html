@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+    .wrapper {
+        overflow: hidden;
+    }
+    .left {
+        float: left;
+        width: 50%;
+        margin-left: -500px;
+        text-align: right;
+    }
+    .center {
+        float: left;
+        width: 1000px;
+        text-align: center;
+    }
+
+    .right {
+        float: right;
+        width: 50%;
+        margin-right: -500px;
+        text-align: left;
+    }
+    
+    * {
+        box-sizing: border-box;
+        }
+    .column {
+        float: left;
+        width: 75%;
+        padding: 10px;
+        text-align: center;
+        }
+    .column2 {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    .footer {
+        bottom: 0;
+        text-align: center;
+    }
+    @media screen and (max-width: 600px) {
+.column {
+width: 100%;
+}
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="left">
+                <form>
+                    <select id="dropdown" name="dropdown">
+                        <option value="Web">Web</option>
+                        <option value="Books">Books</option>
+                        <option value="Video">Video</option>
+                        <option value="Audio">Audio</option>
+                        <option value="Software">Software</option>
+                        <option value="Images">Images</option>
+                        <option value="Upload">Upload</option>
+                    </select>
+                </form>
+            </div>
+            <div class="center">
+                <img src="" href="index.html" alt="Archive.com Logo Goes Here" class="center"><br>
+                <h2>A non-profit library of millions of free books, movies, software, music, websites, and more</h2>
+            </div>
+            <div class="right">
+                <a href="">Sign Up/Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="column">
+            <h2>About the Internet Archive</h2>
+            <img src="" alt="founder">
+            <p>This paragraph is about the website Archive.com</p>
+        </div>
+        <div class="column2">
+            <h2>Read More</h2>
+            <ul>
+                <li>This</li>
+                <li>is</li>
+                <li>an</li>
+                <li>unordered</li>
+                <li>list</li>
+            </ul>
+            <h2>News</h2>
+            <ul>
+                <li>This</li>
+                <li>is</li>
+                <li>another</li>
+                <li>unordered</li>
+                <li>list</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Internet Archive is a member of:</h2>
+    </div>
+
+
+
+
+</body>
