@@ -45,10 +45,146 @@
             bottom: 0;
             text-align: center;
         }
+        .block1 {
+            float: left;
+            padding: 10px;
+            border-style: solid;
+            border-width: 2px;
+            border-color:black;
+            width: 65%;
+        }
+        .block2 {
+            float: left;
+            padding: 10px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            
+        }
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: white; 
+            color: black;
+        }
+        .button1:hover {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .button1:focus {
+            background-color: white;
+            color: black;
+            border-style: solid;
+            border-color: #04AA6D;
+            border-width: 4px;
+        }
+        .button2 {
+            background-color: white; 
+            color: black; 
+        }
+
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+            }
+        .button2:focus {
+            background-color: white;
+            color: black;
+            border-style: solid;
+            border-color: #008CBA;
+            border-width: 4px;
+        }
+        .button3 {
+            background-color: white;
+            color: black;
+        }
+        .button3:hover {
+            background-color: black;
+            color: white;
+        }
+        .button3:focus {
+            background-color: white;
+            color:black;
+            border-style: solid;
+            border-color: black;
+            border-width: 4px;
+        }
+        .button4 {
+            background-color: white;
+            color: grey;
+        }
+        .button4:hover {
+            background-color: grey;
+            color: white;
+            border-style: solid;
+            border-color: grey;
+            border-width: 4px;
+        }
+        .button4:focus {
+            background-color: grey;
+            color: white;
+            border-style: solid;
+            border-color: black;
+            border-width: 4px;
+        }
+        .button5 {
+            background-color: white;
+            color: red;
+        }
+        .button5:hover {
+            background-color: red;
+            color: white;
+            border-style: solid;
+            border-color: red;
+            border-width: 4px;
+        }
+        .button5:focus {
+            background-color: red;
+            color: white;
+            border-style: solid;
+            border-color: black;
+            border-width: 4px;
+        }
+        .button6 {
+            background-color: white;
+            color: green;
+        }
+        .button6:hover {
+            background-color: green;
+            color: white;
+            border-style: solid;
+            border-color: green;
+            border-width: 4px;
+        }
+        .button6:focus {
+            background-color: green;
+            color: white;
+            border-style: solid;
+            border-color: black;
+            border-width: 4px;
+        }
+
         @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+    .block1 {
+        width: 100%;
+    }
+    .block2 {
+        width: 100%;
+    }
   }
+}
     </style>
     </head>
 
@@ -77,6 +213,61 @@
                 </div>
             </div>
         </header>
+        <div class="row">
+            <h2 style="text-align: center;">A message from the Founder</h2>
+            <div class="block1">
+                <p>Dear Patron,<br>
+                    For more than two and a half decades, we have collected, preserved, and shared our digital cultural artifacts. Thanks to the generosity of our patrons, the Internet Archive has grown from a small preservation project into a vast library that serves millions of people each year. Our work has impacted the lives of so many of our users who value free and open access to information.
+
+From the beginning, it was important for the Internet Archive to be a nonprofit, because it was working for the people. Its motives had to be transparent; it had to last a long time. That's why we don't charge for access, sell user data, or run ads, even while we offer free resources to citizens everywhere. We rely on the generosity of individuals like you to pay for servers, staff, and preservation projects.
+                </p>
+            </div>
+            <div class="block2">
+                <figure>
+                    <img src="" alt="Brewster Kahle">
+                    <figcaption>Brewster Kahle, Founder & Digital Librarian</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h2 style="border: solid, black, 1px;">Select Your Donation Amount</h2><br>
+                <button class="button button1">One-time Gift</button>
+                <button class="button button2">Monthly Gift</button><br>
+                <button class="button button3">$25</button>
+                <button class="button button3">$50</button>
+                <button class="button button3">$75</button>
+                <button class="button button3">$100</button>
+                <button class="button button3">Custom Amount $<input type="text"></button><br>
+                <input type="checkbox" id="check" name="check" value="yes" style="text-align: center;">
+                <label for="check">I'll generously add $0.52 to cover fees.</label>
+                <h2 style="border: solid, black, 1px">Payment Information</h2><br>
+                <button class="button button3">Credit Card</button>
+                <button class="button button4">Apple Pay</button>
+                <button class="button button5">GPay</button>
+                <button class="button button6">Crypto</button>
+
+
+            </div>
+            <div class="column">
+                <div class="block2">
+                    <h3>Other Ways to Donate</h3>
+                    <p>Mail your donation to:<br>
+                        Internet Archive<br>
+                        C/O Philanthropy Department<br>
+                        300 Funston Avenue<br>
+                        San Francisco, CA 94118-2116<br>
+                        In order to ensure you receive an<br>
+                        acknowledgement of your gift as<br>
+                        quickly as possible, please include an<br>
+                        email address with your mailed donation.<br>
+                        We regret that we cannot
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
         <div class="footer">
             <a href="about.html">About</a>
             <a href="">Blog</a>
