@@ -1,175 +1,249 @@
 <!DOCTYPE html>
 
 <head>
-    <style>
-    .wrapper {
-        overflow: hidden;
-    }
-    .left {
-        float: left;
-        width: 50%;
-        margin-left: -500px;
-        text-align: right;
-    }
-    .center {
-        float: left;
-        width: 1000px;
-        text-align: center;
-    }
-
-    .right {
-        float: right;
-        width: 50%;
-        margin-right: -500px;
-        text-align: left;
-    }
-    
-    * {
-        box-sizing: border-box;
-        }
-    .column {
-        float: left;
-        width: 75%;
-        padding: 10px;
-        text-align: center;
-        }
-    .column2 {
-        float: left;
-        width: 25%;
-        padding: 10px;
-        text-align: left;
-    }
-
-    .column4 {
-        float: left;
-        width: 25%;
-    }
-    
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-    .footer {
-        bottom: 0;
-        text-align: center;
-    }
-    @media screen and (max-width: 600px) {
-.column {
-width: 100%;
-}
-.column4 {
-    width: 100%;
-  }
-    }
-</style>
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="left">
-                <form>
-                    <select id="dropdown" name="dropdown">
-                        <option value="Web">Web</option>
-                        <option value="Books">Books</option>
-                        <option value="Video">Video</option>
-                        <option value="Audio">Audio</option>
-                        <option value="Software">Software</option>
-                        <option value="Images">Images</option>
-                        <option value="Upload">Upload</option>
-                    </select>
-                </form>
-            </div>
-            <div class="center">
-                <img src="" href="index.html" alt="Archive.com Logo Goes Here" class="center"><br>
-                <h2>A non-profit library of millions of free books, movies, software, music, websites, and more</h2>
-            </div>
-            <div class="right">
-                <a href="">Sign Up/Sign In</a>
-            </div>
-        </div>
+  <header>
+      <div class="header">
+		<a href="#default" class="logo">Internet Archive</a>
+		<img style="float:" src="Images/InternetArchiveLogo.svg" href="#default" alt="Archive.com Logo" class="center">
+		<div class="header-right">
+			<a href="signup.html" class="right">Sign Up/Sign In</a>
+			<h2>A non-profit library of millions of free books, movies, software, music, websites, and more</h2>
+		</div>
+		<div class="select">		
+        <div class="left">
+			<form>
+            <select id="dropdown" name="dropdown">
+				<option value="" disabled selected hidden>Main Menu</option>
+                <option value="0">Web</option>
+                <option value="1">Books</option>
+                <option value="2">Video</option>
+                <option value="3">Audio</option>
+                <option value="4">Software</option>
+                <option value="5">Images</option>
+                <option value="6">Upload</option>
+            </select>
+        </form>
+	</div>
+	    </div>
+	  </div>
+		
+        
     </header>
 
     <div class="row">
-        <div class="column">
+        <div class="column1about">
             <h2>About the Internet Archive</h2>
-            <img src="" alt="founder">
-            <p>This paragraph is about the website Archive.com</p>
+            <img src="Images\internetarchivepressphoto.jpg" alt="founder">
+            <p>The Internet Archive, a 501(c)(3) non-profit, is building a
+digital library of Internet sites and other cultural artifacts in digital form.
+Like a paper library, we provide free access to researchers, historians,
+scholars, people with print disabilities, and the general public. Our mission is to provide Universal Access to All
+Knowledge.</p>
+
+<p>We began in 1996 by archiving the Internet itself, a medium that was just
+beginning to grow in use. Like newspapers, the content published on the web was
+ephemeral - but unlike newspapers, no one was saving it. Today we have 28+ years
+of web history accessible through the <a href="https://archive.org/web/">Wayback
+Machine</a> and we work with 1,200+ library and other partners through our <a
+href="https://archive-it.org/">Archive-It</a></ span> program to identify
+important web pages.</p>
+
+<p>As our web archive grew, so did our commitment to providing digital versions
+of other published works. Today our archive contains: <ul> <li>835 billion <a
+href="http://archive.org/web/">web pages</a></li> <li>44 million <a
+href="https://archive.org/details/texts">books and texts</a></li> <li>15 million
+<a href="https://archive.org/details/audio">audio recordings</a> (including
+255,000 <a href="https://archive.org/details/etree">live concerts</a>)</li>
+<li>10.6 million <a href="https://archive.org/details/movies">videos</a> (including
+2.6 million <a href="https://archive.org/details/tv">Television News
+programs</a><span class="c3 c4">)</li> <li>4.8 million <a
+href="https://archive.org/details/image">images</a></li> <li>1 million <a
+href="https://archive.org/details/software">software programs</a></li> </ul>
+</p>
+
+<p>Anyone with a <a
+href="https://archive.org/account/login.createaccount.php">free account</a> can
+<a href="https://archive.org/upload/">upload media</a> to the Internet Archive.
+We work with thousands of partners globally to save copies of their work into
+special collections. </p>
+
+<p>Because we are a library, we pay special attention to books. Not everyone has
+access to a public or academic library with a good collection, so to provide
+universal access we need to provide digital versions of books. We began a
+program to digitize books in 2005 and today we scan 4,400 books per day in 20
+locations around the world. Books published in or prior to 1928 are available for
+download, and hundreds of thousands of <a
+href="https://openlibrary.org/subjects/in_library#ebooks=true&sort=edition_count
+">modern books can be borrowed</a> through our <a
+href="https://openlibrary.org/">Open Library</a> site. One of the Internet Archive's missions is to serve people who have difficulty interacting with physical books, so most of our digitized
+books are available to <a
+href="https://openlibrary.org/subjects/protected_daisy#ebooks=true&sort=
+edition_count">people with print disabilities</a> (learn about access <a href="../details/printdisabled&tab=about">here</a>).</p>
+
+<p>Like the Internet, television is also an ephemeral medium. We began archiving
+television programs in late 2000, and our first public TV project was an archive
+of <a href="https://archive.org/details/911/day/20010911">TV news surrounding
+the events of September 11, 2001</a>. In 2009 we began to make selected U.S.
+television news broadcasts searchable by captions in our <a
+href="https://archive.org/details/tv">TV News Archive</a>. This service allows
+researchers and the public to use television as a citable and sharable
+reference.</p>
+
+<p>The Internet Archive serves millions of people each day and is one of the top
+300 web sites in the world. A single copy of the Internet Archive library
+collection occupies 145+ Petabytes of server space (and we store at least 2
+copies of everything). We are funded through <a
+href="https://archive.org/donate">donations</a>, grants, and by providing web
+archiving and <a
+href="https://archive.org/scanning">book digitization services</a> for our partners. As with most
+libraries we value the <a href="http://blog.archive.org/2013/10/25/reader-
+privacy-at-the-internet-archive/">privacy of our patrons</a>, so we avoid
+keeping the IP (Internet Protocol) addresses of our readers and offer our site
+in https (secure) protocol.</p>
+
+<p>You can find information about our projects on our <a
+href="http://blog.archive.org/">blog</a> (including important <a
+href="http://blog.archive.org/category/announcements/">announcements</a>), <a
+href="https://archive.org/about/contact.php">contact us</a>, buy swag in our <a
+href="https://store.archive.org/">store</a>, and follow us on <a
+href="https://twitter.com/internetarchive">Twitter</a> and <a
+href="https://www.facebook.com/internetnetarchive/"> Facebook</a>. Welcome to
+the library!</p>
+
+<p>Generous funding has come from Foundations including: <ul> <li><a
+href="https://mellon.org/">Andrew W. Mellon Foundation</a></li> <li><a
+href="https://www.clir.org/">Council on Library and Information
+Resources</a></li> <li><a href="http://www.democracyfund.org/">Democracy
+Fund</a></li> <li><a
+href="https://www.fcc.gov/general/universal-service-program-schools-and-
+libraries-e-rate">Federal Communications Commission Universal Service Program
+for Schools and Libraries (E-Rate)</a></li> <li><a
+href="https://www.imls.gov/">Institute of Museum and Library Services
+(IMLS)</a></li> <li><a href="https://www.knightfoundation.org/">Knight
+Foundation</a></li> <li><a href="http://www.arnoldfoundation.org/">Laura and
+John Arnold Foundation</a></li> <li><a
+href="https://www.neh.gov/divisions/odh">National Endowment for the Humanities,
+Office of Digital Humanities</a></li> <li><a
+href="https://www.nsf.gov/">National Science Foundation</a></li> <li><a
+href="http://pclbfoundation.org/">The Peter and Carmen Lucia Buck
+Foundation</a></li> <li><a href="https://www.philafound.org/">The Philadelphia
+Foundation</a></li> <li><a href="http://ritaallen.org/">Rita Allen
+Foundation</a></li> </ul> </p>
+<p><a
+href="http://www.ala.org/"><img src="Images/ala-logo.jpg" alt="American Library Association (ALA) logo"  width="100" style="padding: 10px;"></a> 
+<a
+href="http://www.arsc-audio.org/"><img src="Images/arsc.png" alt="Association for Recorded Sound Collections (ARSC) logo"  width="100" style="padding: 10px;"></a> 
+<a
+href="https://www.biodiversitylibrary.org/"><img src="Images/BHL-logo.png" alt="Biodiversity Heritage Library (BHL) logo"  width="100" style="padding: 10px;"></a> 
+<a
+href="https://blc.org/"><img src="Images/blc-logo.png" alt="Boston Library Consortium (BLC) logo"  width="100" style="padding: 10px;"></a> 
+<a
+href="https://califa.org/"><img src="Images/califa-logo.jpg" alt="Califa logo"  width="100" style="padding: 10px;"></a>
+<a
+href="https://www.clir.org/"><img src="Images/clir-logo.png" alt="Council on Library and Information Resources (CLIR) logo"  width="100" style="padding: 10px;"></a>
+<a
+href="https://www.cni.org//"><img src="Images/cni-logo.jpg" alt="Coalition for Networked Information (CNI) logo"  width="100" style="padding: 10px;"></a>
+<a
+href="https://www.diglib.org/"><img src="Images/DLF-Logo.png" alt="Digital Library Federation (DLF) logo"  width="100" style="padding: 10px;"></a>
+<a
+href="https://www.dpconline.org/"><img src="Images/dpc-logo.png" alt="Digital Preservation Coalition (DPC) logo"  width="100" style="padding: 10px;"></a>
+<a
+href="https://dp.la/"><img src="Images/DPLA-logo.jpg" alt="Digital Public Library of America (DPLA) logo"  width="100" style="padding: 10px;"></a>
+<a
+href="https://www.ifla.org/"><img src="Images/ifla-logo.jpg" alt="International Federation of Library Associations and Institutions (IFLA) logo"  width="100" style="padding: 10px;"></a>
+<a
+href="https://netpreserve.org/"><img src="Images/iipc-logo.png" alt="International Internet Preservation Consortium (IIPC) logo"  width="100" style="padding: 10px;"></a>
+<a
+href="https://www.musiclibraryassoc.org/"><img src="Images/mla-logo.jpg" alt="Music Library Association logo"  width="100" style="padding: 10px;"></a>
+<a
+href="https://ndsa.org/"><img src="Images/ndsa-logo.jpg" alt="National Digital Stewardship Alliance (NDSA) logo"  width="100" style="padding: 10px;"></a>
+<a
+href="https://projectreshare.org/"><img src="Images/reshare-logo.jpg" alt="ReShare logo"  width="100" style="padding: 10px;"></a></p>
         </div>
         <div class="column2">
             <h2>Read More</h2>
-            <ul>
-                <li>This</li>
-                <li>is</li>
-                <li>an</li>
-                <li>unordered</li>
-                <li>list</li>
-            </ul>
+            <div class="c1nav">
+    <a href="jobs.php">Job Opportunities at the Internet Archive</a><br>
+    <a href="/events">Events</a><br>
+    <a href="/about/terms.php">Terms of Service (updated 12/31/2014)</a><br>
+  </div>
             <h2>News</h2>
-            <ul>
-                <li>This</li>
-                <li>is</li>
-                <li>another</li>
-                <li>unordered</li>
-                <li>list</li>
-            </ul>
+            <div>
+                  <table class="forumTable table table-condensed table-hover">
+            <tbody>
+                              <tr valign="top" class=" forumRow">
+                  <td>
+                    <a href="https://factcheck.afp.com/doc.afp.com.363W9GL">False claims linking Bill Gates to 'maggot milk' spread online</a>
+                  </td>
+                </tr>
+                              <tr valign="top" class=" forumRow">
+                  <td>
+                    <a href="https://www.theverge.com/2024/7/16/24199744/apple-news-stocks-apps-chumbox-ads-taboola">Apple partners with leading chumbox provider to sell ads</a>
+                  </td>
+                </tr>
+                              <tr valign="top" class=" forumRow">
+                  <td>
+                    <a href="https://washingtonpost.com/politics/2024/07/16/they-didnt-shoot-donald-trump/">&lsquo;They&rsquo; didn&rsquo;t shoot Donald Trump</a>
+                  </td>
+                </tr>
+                              <tr valign="top" class=" forumRow">
+                  <td>
+                    <a href="https://factcheck.afp.com/doc.afp.com.36443NN">Clip shows Trump closing eyes during RNC prayer, not sleeping</a>
+                  </td>
+                </tr>
+                              <tr valign="top" class=" forumRow">
+                  <td>
+                    <a href="https://www.factcheck.org/2024/07/republican-national-convention-opening-night/">Republican National Convention, Opening Night</a>
+                  </td>
+                </tr>
+                              <tr valign="top" class=" forumRow">
+                  <td>
+                    <a href="https://www.siliconrepublic.com/business/verizon-sued-music-labels-piracy-safe-haven">Verizon accused of creating a &lsquo;safe haven&rsquo; for music piracy</a>
+                  </td>
+                </tr>
+                              <tr valign="top" class=" forumRow">
+                  <td>
+                    <a href="https://www.crypto-news-flash.com/filecoin-preserves-over-500-terabytes-of-u-s-government-data-via-democracys-library/">Filecoin Preserves Over 500 Terabytes of U.S. Government Data via Democracy&rsquo;s Library</a>
+                  </td>
+                </tr>
+                              <tr valign="top" class=" forumRow">
+                  <td>
+                    <a href="https://factcheck.afp.com/doc.afp.com.36492XY">Photos of Trump, agents smiling amid assassination attempt are doctored</a>
+                  </td>
+                </tr>
+                              <tr valign="top" class=" forumRow">
+                  <td>
+                    <a href="https://www.factcheck.org/2024/07/posts-use-altered-image-of-secret-service-agents-following-trump-shooting/">Posts Use Altered Image of Secret Service Agents Following Trump Shooting</a>
+                  </td>
+                </tr>
+                              <tr valign="top" class=" forumRow">
+                  <td>
+                    <a href="https://www.reuters.com/fact-check/convicted-anti-trump-protester-falsely-identified-shooter-2024-07-15/">Fact Check: Convicted anti-Trump protester falsely identified as shooter</a>
+                  </td>
+                </tr>
+                          </tbody>
+          </table>
+              </div>
         </div>
     </div>
-    <div class="footer">
-        <h2>Internet Archive is a member of:</h2><br>
-        <div class="row">
-            <div class="column4">
-                <table>
-                    <tr>
-                        <td><img src="" alt="Thumbnail 1" href=""></td>
-                        <td><img src="" alt="Thumbnail 2" href=""></td>
-                    </tr>
-                    <tr>
-                        <td><img src="" alt="Thumbnail 3" href=""></td>
-                        <td><img src="" alt="Thumbnail 4" href=""></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="column4">
-                <table>
-                    <tr>
-                        <td><img src="" alt="Thumbnail 1" href=""></td>
-                        <td><img src="" alt="Thumbnail 2" href=""></td>
-                    </tr>
-                    <tr>
-                        <td><img src="" alt="Thumbnail 3" href=""></td>
-                        <td><img src="" alt="Thumbnail 4" href=""></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="column4">
-                <table>
-                    <tr>
-                        <td><img src="" alt="Thumbnail 1" href=""></td>
-                        <td><img src="" alt="Thumbnail 2" href=""></td>
-                    </tr>
-                    <tr>
-                        <td><img src="" alt="Thumbnail 3" href=""></td>
-                        <td><img src="" alt="Thumbnail 4" href=""></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="column4">
-                <table>
-                    <tr>
-                        <td><img src="" alt="Thumbnail 1" href=""></td>
-                        <td><img src="" alt="Thumbnail 2" href=""></td>
-                    </tr>
-                    <tr>
-                        <td><img src="" alt="Thumbnail 3" href=""></td>
-                        <td><img src="" alt="Thumbnail 4" href=""></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+    
+<div class="footer_about">
+	<ul>
+        <li><a href="about.html">About</a></li>
+        <li><a  target="_blank">Blog</a></li>
+        <li><a  target="_blank">Projects</a></li>
+        <li><a  target="_blank">Help</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a  target="_blank">Contact</a></li>
+        <li><a  target="_blank">Jobs</a></li>
+        <li><a  target="_blank">Volunteer</a></li>
+        <li><a target="_blank">People</a></li>
+	</ul>
     </div>
-
 
 
 

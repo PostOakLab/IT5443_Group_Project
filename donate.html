@@ -1,230 +1,55 @@
+
 <!DOCTYPE html>
 <head>
-    <style>
-         
-        
-        .wrapper {
-            overflow: hidden;
-        }
-        .left {
-            float: left;
-            width: 50%;
-            margin-left: -500px;
-            text-align: right;
-        }
-        .center {
-            float: left;
-            width: 1000px;
-            text-align: center;
-        }
-
-        .right {
-            float: right;
-            width: 50%;
-            margin-right: -500px;
-            text-align: left;
-        }
-
-        
-        * {
-            box-sizing: border-box;
-            }
-        .column {
-            float: left;
-            width: 50%;
-            padding: 10px;
-            text-align: center;
-            }
-        
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-            }
-        .footer {
-            bottom: 0;
-            text-align: center;
-        }
-        .block1 {
-            float: left;
-            padding: 10px;
-            border-style: solid;
-            border-width: 2px;
-            border-color:black;
-            width: 65%;
-        }
-        .block2 {
-            float: left;
-            padding: 10px;
-            border-style: solid;
-            border-width: 2px;
-            border-color: black;
-            
-        }
-        .button {
-            border: none;
-            color: white;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-        .button1 {
-            background-color: white; 
-            color: black;
-        }
-        .button1:hover {
-            background-color: #04AA6D;
-            color: white;
-        }
-        .button1:focus {
-            background-color: white;
-            color: black;
-            border-style: solid;
-            border-color: #04AA6D;
-            border-width: 4px;
-        }
-        .button2 {
-            background-color: white; 
-            color: black; 
-        }
-
-        .button2:hover {
-            background-color: #008CBA;
-            color: white;
-            }
-        .button2:focus {
-            background-color: white;
-            color: black;
-            border-style: solid;
-            border-color: #008CBA;
-            border-width: 4px;
-        }
-        .button3 {
-            background-color: white;
-            color: black;
-        }
-        .button3:hover {
-            background-color: black;
-            color: white;
-        }
-        .button3:focus {
-            background-color: white;
-            color:black;
-            border-style: solid;
-            border-color: black;
-            border-width: 4px;
-        }
-        .button4 {
-            background-color: white;
-            color: grey;
-        }
-        .button4:hover {
-            background-color: grey;
-            color: white;
-            border-style: solid;
-            border-color: grey;
-            border-width: 4px;
-        }
-        .button4:focus {
-            background-color: grey;
-            color: white;
-            border-style: solid;
-            border-color: black;
-            border-width: 4px;
-        }
-        .button5 {
-            background-color: white;
-            color: red;
-        }
-        .button5:hover {
-            background-color: red;
-            color: white;
-            border-style: solid;
-            border-color: red;
-            border-width: 4px;
-        }
-        .button5:focus {
-            background-color: red;
-            color: white;
-            border-style: solid;
-            border-color: black;
-            border-width: 4px;
-        }
-        .button6 {
-            background-color: white;
-            color: green;
-        }
-        .button6:hover {
-            background-color: green;
-            color: white;
-            border-style: solid;
-            border-color: green;
-            border-width: 4px;
-        }
-        .button6:focus {
-            background-color: green;
-            color: white;
-            border-style: solid;
-            border-color: black;
-            border-width: 4px;
-        }
-
-        @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    .block1 {
-        width: 100%;
-    }
-    .block2 {
-        width: 100%;
-    }
-  }
-}
-    </style>
+   <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <header>
-            <div class="wrapper">
-                <div class="left">
-                    <form>
-                        <select id="dropdown" name="dropdown">
-                            <option value="Web">Web</option>
-                            <option value="Books">Books</option>
-                            <option value="Video">Video</option>
-                            <option value="Audio">Audio</option>
-                            <option value="Software">Software</option>
-                            <option value="Images">Images</option>
-                            <option value="Upload">Upload</option>
-                        </select>
-                    </form>
-                </div>
-                <div class="center">
-                    <img src="" href="index.html" alt="Archive.com Logo Goes Here" class="center"><br>
-                    <h2>A non-profit library of millions of free books, movies, software, music, websites, and more</h2>
-                </div>
-                <div class="right">
-                    <a href="">Sign Up/Sign In</a>
-                </div>
-            </div>
-        </header>
+            <header>
+      <div class="header">
+		<a href="#default" class="logo">Internet Archive</a>
+		<img style="float:" src="Images/InternetArchiveLogo.svg" href="#default" alt="Archive.com Logo" class="center">
+		<div class="header-right">
+			<a href="signup.html" class="right">Sign Up/Sign In</a>
+			<h2>A non-profit library of millions of free books, movies, software, music, websites, and more</h2>
+		</div>
+		<div class="select">		
+        <div class="left">
+			<form>
+            <select id="dropdown" name="dropdown">
+				<option value="" disabled selected hidden>Main Menu</option>
+                <option value="0">Web</option>
+                <option value="1">Books</option>
+                <option value="2">Video</option>
+                <option value="3">Audio</option>
+                <option value="4">Software</option>
+                <option value="5">Images</option>
+                <option value="6">Upload</option>
+            </select>
+        </form>
+	</div>
+	    </div>
+	  </div>       
+    </header>
+		
         <div class="row">
             <h2 style="text-align: center;">A message from the Founder</h2>
-            <div class="block1">
-                <p>Dear Patron,<br>
-                    For more than two and a half decades, we have collected, preserved, and shared our digital cultural artifacts. Thanks to the generosity of our patrons, the Internet Archive has grown from a small preservation project into a vast library that serves millions of people each year. Our work has impacted the lives of so many of our users who value free and open access to information.
-
-From the beginning, it was important for the Internet Archive to be a nonprofit, because it was working for the people. Its motives had to be transparent; it had to last a long time. That's why we don't charge for access, sell user data, or run ads, even while we offer free resources to citizens everywhere. We rely on the generosity of individuals like you to pay for servers, staff, and preservation projects.
-                </p>
+            <div class="block1" style="text-align: left;">
+                <p><span>Dear Patron,</span><br>
+                    For more than two and a half decades, we have collected, preserved, and shared our digital cultural artifacts. Thanks to the generosity of our patrons, the Internet Archive has grown from a small preservation project into a vast library that serves millions of people each year. Our work has impacted the lives of so many of our users who value free and open access to information. </p>
+<p>From the beginning, it was important for the Internet Archive to be a nonprofit, because it was working for the people. Its motives had to be transparent; it had to last a long time. That's why we don't charge for access, sell user data, or run ads, even while we offer free resources to citizens everywhere. We rely on the generosity of individuals like you to pay for servers, staff, and preservation projects.</p>
+<p>If you can't imagine a future without the Internet Archive, please consider supporting our work. We promise to put your donation to good use as we continue to store over 99 petabytes of data, including 625 billion webpages, 38 million books and texts, and 14 million audio recordings.</p>
+<p>If you find our site useful, please chip in! Your support will help us build the web we deserve.</p>
+Thank you for joining me.                
+<p><i>Brewster Kahle
+Founder & Digital Librarian</p>
+<p>Please make a tax-deductible donation now.<br>
+You will receive an email confirmation that can be used for your tax records.</p>
+<p>The Internet Archive is a California non-profit charity that is tax-exempt under section 501c3 of the Internal Revenue Code. Federal Tax ID Number 94-324276</i> </p>
             </div>
             <div class="block2">
                 <figure>
-                    <img src="" alt="Brewster Kahle">
+                    <img src="Images\brewster_kahle..jpg" alt="Brewster Kahle">
                     <figcaption>Brewster Kahle, Founder & Digital Librarian</figcaption>
                 </figure>
             </div>
@@ -268,16 +93,18 @@ From the beginning, it was important for the Internet Archive to be a nonprofit,
 
             </div>
         </div>
-        <div class="footer">
-            <a href="about.html">About</a>
-            <a href="">Blog</a>
-            <a href="">Projects</a>
-            <a href="">Help</a>
-            <a href="donate.html">Donate</a>
-            <a href="">Contact</a>
-            <a href="">Jobs</a>
-            <a href="">Volunteer</a>
-            <a href="">People</a>
-        </div>
+        <div class="footer_donate">
+	<ul>
+        <li><a href="about.html">About</a></li>
+        <li><a  target="_blank">Blog</a></li>
+        <li><a  target="_blank">Projects</a></li>
+        <li><a  target="_blank">Help</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a  target="_blank">Contact</a></li>
+        <li><a  target="_blank">Jobs</a></li>
+        <li><a  target="_blank">Volunteer</a></li>
+        <li><a target="_blank">People</a></li>
+	</ul>
+    </div>
 
     </body>
